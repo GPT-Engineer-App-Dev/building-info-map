@@ -47,7 +47,14 @@ const Index = () => {
           <ModalHeader>{selectedEvent?.name}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
+            <Text>ID: {selectedEvent?.id}</Text>
+            <Text>Created At: {selectedEvent?.created_at}</Text>
+            <Text>Name: {selectedEvent?.name}</Text>
             <Text>Date: {selectedEvent?.date}</Text>
+            <Text>Venue ID: {selectedEvent?.venue_id}</Text>
+            <Text>Is Starred: {selectedEvent?.is_starred ? 'Yes' : 'No'}</Text>
+            <Text>Private: {selectedEvent?.private ? 'Yes' : 'No'}</Text>
+            <Text>Cancelled: {selectedEvent?.cancelled ? 'Yes' : 'No'}</Text>
             <Text>Description: {selectedEvent?.description}</Text>
           </ModalBody>
           <ModalFooter>
